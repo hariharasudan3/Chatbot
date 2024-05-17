@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARI HARA SUDAN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/icon.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO MY WEBPAGE</h1>
+    </header>
+    <div class="container">
+        <section class="left">
+            <h1><b>Hari Hara Sudan</b></h1>
+            <img src="{{ url_for('static', filename='img/photo.jpg') }}">
+            <h2>About Me</h2>
+            <p><b>Hello,I'm an ardent technology and a blossoming coder.</b></p>
+            <h2>Education</h2>
+            <ul>
+                <li><b>B.Sc. Artificial Intelligence and Machine Learning</b></li>
+            </ul>
+        </section>
+        <section class="right">
+            <h2>Projects</h2>
+            <ul>
+                    <li>Image  Classification</li>
+                    <li>Text Normalization</li>
+                    <li>Text Summarizer</li>
+            </ul>
+            <h2>Skills</h2>
+            <ul>
+                <ul>
+                    <li>C</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                </ul>
+            </ul>
+            <h2>Contact</h2>
+                <table>
+                    <tr>
+                        <td><b>Email </b></td>
+                        <td> : </td>
+                        <td>abc@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><b>LinkedIn</b></td>
+                        <td> : </td>
+                        <td><a href="https://www.linkedin.com/in/hari-hara-sudan-a-s/">Hari Hara Sudan</a></td>
+                    </tr>
+                    <tr>
+                        <td><b>GitHub</b></td>
+                        <td> : </td>
+                        <td><a href="https://github.com/hariharasudan3">Hari Hara Sudan</a></td>
+                    </tr>
+                </table>
+        </section>
+    </div>
+    <div id="chat-icon" class="floating-icon">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    <div id="message-box" class="floating-message">
+        <i class="fas fa-robot"></i><p>Hi chatbot here!</p>
+    </div>
+    <div id="chat-dialog" class="hidden">
+        <div id="chat-header">
+            <span><b>Chatbot</b></span>
+            <i id="close-icon" class="fas fa-times"></i>
+        </div>
+        <div id="chat-messages"></div>
+        <input type="text" id="user-input" placeholder="Type your question...">
+        <button id="send-button">Send</button>
+    </div>
+    <script src="static/js/chatbot.js"></script>
+    <footer>
+        <p><b>&copy; Hari Hara Sudan</b></p>
+    </footer>
+</body>
+</html>
