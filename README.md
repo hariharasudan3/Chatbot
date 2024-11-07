@@ -10,3 +10,6 @@ To run, <br>
 ```python app.py```
 <br>
 
+## 📃 License
+
+This project follows the [MIT License](/LICENSE).
